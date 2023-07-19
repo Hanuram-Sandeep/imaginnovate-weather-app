@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+}
+.content {
+  margin-top: 16px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 5px;
+  margin-right: 10px;
+  flex: 1;
+  max-width: 250px;
+}
+
+.question-mark {
+  font-size: 16px;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+.weather-card {
+  margin: 20px;
+}
+.search-button {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-button .fa-spinner {
+  font-size: 20px;
+  margin-left: 5px;
+  color: white;
+}
+
+.table-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.weather-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+.weather-table th {
+  background-color: grey;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+.weather-table td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: center;
+  width: 150px;
+}
+
+.weather-table td.min-temp-cell,
+.weather-table td.max-temp-cell {
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+.weather-table tbody tr:nth-child(2) td {
+  border-top: 1px solid black;
+}
+
+.date-row {
+  background-color: orange;
+  padding: 12px;
+  text-align: center;
+  border-color: black;
+  border-width: 20px;
+}
+
+.weather-table .date-row td {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.temperature-text {
+  font-weight: bold;
+}
+
+.weather-table td.min-temp-cell,
+.weather-table td.max-temp-cell {
+  background-color: grey;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .search-button {
+    margin-bottom: 10px;
+  }
+
+  .table-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date-row {
+    width: 256px;
+  }
+
+  .weather-table {
+    width: 80%;
+  }
+}
